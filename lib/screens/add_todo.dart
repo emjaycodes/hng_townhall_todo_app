@@ -71,7 +71,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                       alignment: const Alignment(0, 0.5),
                       child: CustomText(
                         requiredText: 'Add To-do',
-                        fontSize: MyDimension.dim16,
+                        fontSize: Appdimen.dim16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -81,7 +81,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                 40.verticalSpace,
                 CustomText(
                   requiredText: 'To-do',
-                  fontSize: MyDimension.dim12,
+                  fontSize: Appdimen.dim12,
                   fontWeight: FontWeight.bold,
                 ),
                 10.verticalSpace,
@@ -101,7 +101,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                       hintText: 'What do you want to do',
                       hintStyle: GoogleFonts.roboto(
                         color: const Color(0xFFDEE1E4),
-                        fontSize: MyDimension.dim22,
+                        fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
                       enabledBorder: const OutlineInputBorder(
@@ -126,7 +126,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                   decoration: InputDecoration(
                     hintText: 'Select date',
                     hintStyle: GoogleFonts.roboto(
-                        fontSize: MyDimension.dim10,
+                        fontSize: Appdimen.dim10,
                         color: const Color(0xFFC6C1C1),
                         fontWeight: FontWeight.w400),
                     prefixIcon: const Icon(Icons.date_range),
@@ -160,7 +160,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                     decoration: InputDecoration(
                       hintText: 'Select time',
                       hintStyle: GoogleFonts.roboto(
-                          fontSize: MyDimension.dim10,
+                          fontSize: Appdimen.dim10,
                           color: const Color(0xFFC6C1C1),
                           fontWeight: FontWeight.w400),
                       prefixIcon: const Icon(Icons.access_time),
@@ -218,7 +218,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                                       child: CustomText(
                                         requiredText: 'Remove',
                                         color: Colors.red,
-                                        fontSize: MyDimension.dim12,
+                                        fontSize: Appdimen.dim12,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
@@ -250,7 +250,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                           decoration: InputDecoration(
                             hintText: 'Add sub-task',
                             hintStyle: GoogleFonts.roboto(
-                                fontSize: MyDimension.dim10,
+                                fontSize: Appdimen.dim10,
                                 color: const Color(0xFFC6C1C1),
                                 fontWeight: FontWeight.w400),
                             enabledBorder: OutlineInputBorder(
@@ -291,7 +291,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                           color: todoNotifier.isTypingSubTask
                               ? const Color(0xFF10CFB1)
                               : Colors.grey,
-                          fontSize: MyDimension.dim12,
+                          fontSize: Appdimen.dim12,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -316,7 +316,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                         },
                         child: CustomText(
                           requiredText: 'New sub-task',
-                          fontSize: MyDimension.dim12,
+                          fontSize: Appdimen.dim12,
                           color: const Color(0xFF10CFB1),
                         ))
                   ],
@@ -394,7 +394,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                                               requiredText: context
                                                   .read<TodoNotifier>()
                                                   .categories[index]['text'],
-                                              fontSize: MyDimension.dim12,
+                                              fontSize: Appdimen.dim12,
                                               color: Colors.white,
                                               fontWeight: FontWeight.w500,
                                               softWrap: true,
@@ -437,7 +437,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                               Flexible(
                                 child: CustomText(
                                   requiredText: 'Add Categories',
-                                  fontSize: MyDimension.dim12,
+                                  fontSize: Appdimen.dim12,
                                   color: const Color(0xFF192028),
                                   fontWeight: FontWeight.w500,
                                   softWrap: true,
@@ -519,7 +519,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                         10.horizontalSpace,
                         CustomText(
                           requiredText: 'Add To-do',
-                          fontSize: MyDimension.dim16,
+                          fontSize: Appdimen.dim16,
                           color: Colors.white,
                         )
                       ],

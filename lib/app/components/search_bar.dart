@@ -34,7 +34,7 @@ class CustomTodoSearchBar extends StatelessWidget {
       hintStyle: MaterialStateProperty.all(
         GoogleFonts.roboto(
           color: AppColors.textColor.withOpacity(0.5),
-          fontSize: MyDimension.dim10,
+          fontSize: Appdimen.dim10,
         ),
       ),
       hintText: "Search for task, date, categories",

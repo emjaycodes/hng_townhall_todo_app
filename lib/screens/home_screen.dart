@@ -156,7 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     requiredText: context
                                         .read<TodoNotifier>()
                                         .greetingText,
-                                    fontSize: MyDimension.dim16,
+                                    fontSize: Appdimen.dim16,
                                     fontWeight: FontWeight.bold,
                                     color: AppColors.textColor,
                                     textAlign: TextAlign.left,
@@ -165,7 +165,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   CustomText(
                                     requiredText: 'What do you have planned ',
                                     textAlign: TextAlign.left,
-                                    fontSize: MyDimension.dim10,
+                                    fontSize: Appdimen.dim10,
                                     color: AppColors.textColor.withOpacity(0.5),
                                   ),
                                 ],
@@ -241,7 +241,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           .read<TodoNotifier>()
                                                           .categories[index]
                                                       ['text'],
-                                                  fontSize: MyDimension.dim12,
+                                                  fontSize: Appdimen.dim12,
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.w500,
                                                   softWrap: true,
@@ -283,7 +283,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     Flexible(
                                       child: CustomText(
                                         requiredText: 'Add Categories',
-                                        fontSize: MyDimension.dim12,
+                                        fontSize: Appdimen.dim12,
                                         color: const Color(0xFF192028),
                                         fontWeight: FontWeight.w500,
                                         softWrap: true,
@@ -324,7 +324,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 'Upcoming To-do\'s',
                                 style: GoogleFonts.roboto(
                                   color: const Color(0xFF192028),
-                                  fontSize: MyDimension.dim16,
+                                  fontSize: Appdimen.dim16,
                                   fontWeight: FontWeight.w500,
                                   height: 0,
                                 ),
@@ -501,7 +501,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     'Overdue',
                                     style: GoogleFonts.roboto(
                                       color: const Color(0xFF192028),
-                                      fontSize: MyDimension.dim16,
+                                      fontSize: Appdimen.dim16,
                                       fontWeight: FontWeight.w500,
                                     ),
                                   ),
@@ -524,7 +524,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       '2',
                                       style: GoogleFonts.roboto(
                                         color: Colors.white,
-                                        fontSize: MyDimension.dim10,
+                                        fontSize: Appdimen.dim10,
                                         fontWeight: FontWeight.w400,
                                       ),
                                     ),
@@ -569,7 +569,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 'Notes',
                                 style: GoogleFonts.roboto(
                                   color: const Color(0xFF192028),
-                                  fontSize: MyDimension.dim16,
+                                  fontSize: Appdimen.dim16,
                                   fontWeight: FontWeight.w500,
                                   height: 0,
                                 ),
