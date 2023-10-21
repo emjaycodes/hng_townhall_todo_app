@@ -32,7 +32,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
   final TextEditingController detailsController = TextEditingController();
   final TextEditingController dateController = TextEditingController();
   final TextEditingController timeController = TextEditingController();
-  final TodoModel _todoModel = TodoModel();
+  final Todo _todoModel = Todo();
   String category = '';
   List<bool> isChecked = [];
   List<String> subTasks = [];

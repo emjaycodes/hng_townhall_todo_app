@@ -1,4 +1,4 @@
-class TodoModel {
+class Todo {
   String? todoType;
   String? todoName;
   String? todoDate;
@@ -10,7 +10,7 @@ class TodoModel {
   bool? todoIsCompleted;
   String? todoFullDate;
 
-  TodoModel({
+  Todo({
     this.todoType,
     this.todoName,
     this.todoDate,
@@ -23,11 +23,11 @@ class TodoModel {
     this.todoFullDate,
   });
 
-  // Create a factory constructor to convert from JSON
-  factory TodoModel.fromJson(Map<String, dynamic> json) {
+ 
+  factory Todo.fromJson(Map<String, dynamic> json) {
     List<String> subTasks = (json['todoSubTask'] as List).cast<String>();
 
-    return TodoModel(
+    return Todo(
       todoType: json['todoType'],
       todoName: json['todoName'],
       todoDate: json['todoDate'],
@@ -41,7 +41,7 @@ class TodoModel {
     );
   }
 
-  // Create a method to convert to JSON
+ 
   Map<String, dynamic> toJson() {
     return {
       'todoType': todoType,
