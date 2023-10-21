@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../common/components/custom_text.dart';
-import '../common/constants/route_constant.dart';
-import '../core/config/router_config.dart';
+import '../app/components/custom_text.dart';
+import '../app/constants/route_constant.dart';
+import '../app/config/router_config.dart';
 
 class SuccessScreen extends StatefulWidget {
   const SuccessScreen({super.key});

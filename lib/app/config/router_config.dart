@@ -1,24 +1,17 @@
 import 'package:go_router/go_router.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../../common/constants/route_constant.dart';
+import '../constants/route_constant.dart';
 import '../../screens/add_todo.dart';
 import '../../screens/home_screen.dart';
-import '../../screens/splash_screen.dart';
+
 import '../../screens/success_screen.dart';
 
 
 final GoRouter routerConfig = GoRouter(
-    initialLocation: RoutesPath.splash,
+    initialLocation: RoutesPath.homeScreen,
     errorBuilder: (context, state) => const Placeholder(),
     routes: [
-      GoRoute(
-        path: RoutesPath.splash,
-        pageBuilder: (context, state) => CupertinoPage<void>(
-          child: const SplashScreen(),
-          key: state.pageKey,
-        ),
-      ),
       GoRoute(
           path: RoutesPath.homeScreen,
           pageBuilder: (context, state) {

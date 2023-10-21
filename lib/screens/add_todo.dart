@@ -5,15 +5,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:text_area/text_area.dart';
-import 'package:to_do_app/common/constants/app_color.dart';
-import 'package:to_do_app/data/models/todo_model.dart';
+import 'package:to_do_app/app/constants/app_color.dart';
+import 'package:to_do_app/app/models/todo_model.dart';
 import 'package:to_do_app/data/shared_preferences/shared_preferences.dart';
 
-import '../common/components/custom_text.dart';
-import '../common/components/dimension.dart';
-import '../common/constants/route_constant.dart';
-import '../core/config/router_config.dart';
-import '../core/providers/todo_provider.dart';
+import '../app/components/custom_text.dart';
+import '../app/components/dimension.dart';
+import '../app/constants/route_constant.dart';
+import '../app/config/router_config.dart';
+import '../app/providers/todo_provider.dart';
 
 class AddTodoScreen extends StatefulWidget {
   const AddTodoScreen({super.key});
@@ -534,6 +534,6 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
   }
 
   addTodos(List<Map<String, dynamic>> todos) {
-    context.read<TodoNotifier>().addTodo(todos);
+    context.read<TodoNotifier>().addTodos(todos);
   }
 }

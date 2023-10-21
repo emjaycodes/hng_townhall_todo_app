@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../common/components/custom_text.dart';
-import '../common/constants/app_color.dart';
-import '../core/providers/todo_provider.dart';
+import '../app/components/custom_text.dart';
+import '../app/constants/app_color.dart';
+import '../app/providers/todo_provider.dart';
 
 class TaskCompletedScreen extends StatelessWidget {
   const TaskCompletedScreen({super.key});
