@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:text_area/text_area.dart';
-import 'package:to_do_app/app/constants/app_color.dart';
+import 'package:to_do_app/app/constants/colors.dart';
 import 'package:to_do_app/app/models/todo_model.dart';
 import 'package:to_do_app/data/shared_preferences/shared_preferences.dart';
 
@@ -109,7 +109,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                       ),
                       focusedBorder: UnderlineInputBorder(
                         borderSide: const BorderSide(
-                            width: 1, color: AppColor.appColor),
+                            width: 1, color: AppColors.primaryColor),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       contentPadding: const EdgeInsets.symmetric(horizontal: 1),
@@ -432,7 +432,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                             children: [
                               const Icon(
                                 CupertinoIcons.plus,
-                                color: AppColor.textColor,
+                                color: AppColors.textColor,
                               ),
                               Flexible(
                                 child: CustomText(
@@ -504,7 +504,7 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                                 dateController.text.isNotEmpty &&
                                 timeController.text.isNotEmpty &&
                                 category.isNotEmpty
-                            ? AppColor.appColor
+                            ? AppColors.primaryColor
                             : const Color(0xFFB6AFA8),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12))),

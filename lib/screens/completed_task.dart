@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../app/components/custom_text.dart';
-import '../app/constants/app_color.dart';
+import '../app/constants/colors.dart';
 import '../app/providers/todo_provider.dart';
 
 class TaskCompletedScreen extends StatelessWidget {
@@ -19,8 +19,8 @@ class TaskCompletedScreen extends StatelessWidget {
             elevation: 0,
             centerTitle: true,
             backgroundColor: Colors.white,
-            foregroundColor: AppColor.textColor,
-            title: const CustomText(requiredText: 'Done To-do', color: AppColor.textColor,),
+            foregroundColor: AppColors.textColor,
+            title: const CustomText(requiredText: 'Done To-do', color: AppColors.textColor,),
           ),
           body: completedTasks.isEmpty
               ? const Center(

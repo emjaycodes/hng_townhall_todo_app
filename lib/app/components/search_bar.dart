@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../constants/app_color.dart';
+import '../constants/colors.dart';
 import 'dimension.dart';
 
-class CustomSearchBar extends StatelessWidget {
+class CustomTodoSearchBar extends StatelessWidget {
   final TextEditingController controller;
   final VoidCallback onTap;
 
-  const CustomSearchBar({
+  const CustomTodoSearchBar({
     super.key,
     required this.controller,
     required this.onTap,
@@ -33,7 +33,7 @@ class CustomSearchBar extends StatelessWidget {
       padding: MaterialStateProperty.all(const EdgeInsets.all(12.0)),
       hintStyle: MaterialStateProperty.all(
         GoogleFonts.roboto(
-          color: AppColor.textColor.withOpacity(0.5),
+          color: AppColors.textColor.withOpacity(0.5),
           fontSize: MyDimension.dim10,
         ),
       ),

@@ -9,7 +9,7 @@ import '../app/components/custom_focus_background.dart';
 import '../app/components/custom_text.dart';
 import '../app/components/dimension.dart';
 import '../app/components/search_bar.dart';
-import '../app/constants/app_color.dart';
+import '../app/constants/colors.dart';
 import '../app/constants/route_constant.dart';
 import '../app/config/router_config.dart';
 import '../app/providers/todo_provider.dart';
@@ -158,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         .greetingText,
                                     fontSize: MyDimension.dim16,
                                     fontWeight: FontWeight.bold,
-                                    color: AppColor.textColor,
+                                    color: AppColors.textColor,
                                     textAlign: TextAlign.left,
                                   ),
                                   5.verticalSpace,
@@ -166,7 +166,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     requiredText: 'What do you have planned ',
                                     textAlign: TextAlign.left,
                                     fontSize: MyDimension.dim10,
-                                    color: AppColor.textColor.withOpacity(0.5),
+                                    color: AppColors.textColor.withOpacity(0.5),
                                   ),
                                 ],
                               ),
@@ -181,7 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       30.verticalSpace,
                       //search
-                      CustomSearchBar(
+                      CustomTodoSearchBar(
                         controller:
                             context.read<TodoNotifier>().searchController,
                         onTap: () {},
@@ -278,7 +278,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   children: [
                                     const Icon(
                                       CupertinoIcons.plus,
-                                      color: AppColor.textColor,
+                                      color: AppColors.textColor,
                                     ),
                                     Flexible(
                                       child: CustomText(
@@ -694,7 +694,7 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.home,
                 size: 30,
                 color: todoNotifier.navIndex == 0
-                    ? AppColor.appColor
+                    ? AppColors.primaryColor
                     : Colors.grey),
             label: 'Home',
           ),
@@ -702,7 +702,7 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.check_box_outlined,
                 size: 30,
                 color: todoNotifier.navIndex == 1
-                    ? AppColor.appColor
+                    ? AppColors.primaryColor
                     : Colors.grey),
             label: 'Done',
           ),
@@ -710,7 +710,7 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.settings,
                 size: 30,
                 color: todoNotifier.navIndex == 2
-                    ? AppColor.appColor
+                    ? AppColors.primaryColor
                     : Colors.grey),
             label: 'Settings',
           ),
@@ -720,9 +720,9 @@ class _HomeScreenState extends State<HomeScreen> {
           context.read<TodoNotifier>().setNavIndex(index);
           _controller.jumpToPage(index);
         },
-        selectedLabelStyle: GoogleFonts.roboto(color: AppColor.appColor),
+        selectedLabelStyle: GoogleFonts.roboto(color: AppColors.primaryColor),
         unselectedLabelStyle: GoogleFonts.roboto(color: Colors.grey),
-        selectedItemColor: AppColor.appColor,
+        selectedItemColor: AppColors.primaryColor,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => context.read<TodoNotifier>().toggleFloatingActionButton(),
@@ -731,7 +731,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         backgroundColor: todoNotifier.isFloatingPressed
             ? const Color(0xFF645A50)
-            : AppColor.appColor,
+            : AppColors.primaryColor,
         child: Icon(
           todoNotifier.isFloatingPressed ? CupertinoIcons.xmark : Icons.add,
         ), // Customize the button color.
