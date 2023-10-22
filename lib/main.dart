@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
           return MaterialApp.router(
             routerConfig: routerConfig,
             debugShowCheckedModeBanner: false,
-            title: 'Breakout',
+            title: 'Todo task',
           );
         });
   }
